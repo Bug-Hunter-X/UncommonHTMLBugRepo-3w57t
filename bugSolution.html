@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Solution: Use optional chaining and nullish coalescing to handle null or undefined object properties gracefully.
+    const myElement = document.getElementById("myDiv");
+    const someValue = myElement?.nonExistentProperty ?? "Default Value";
+    console.log(someValue); // Outputs "Default Value"
+  </script>
+</body>
+</html>
