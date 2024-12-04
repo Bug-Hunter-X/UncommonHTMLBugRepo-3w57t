@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Attempting to access a non-existent property of a null or undefined object.
+    // This is a common error that is sometimes overlooked.
+    const myElement = document.getElementById("myDiv");
+    const someValue = myElement.nonExistentProperty;
+  </script>
+</body>
+</html>
